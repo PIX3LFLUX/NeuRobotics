@@ -33,7 +33,7 @@ Sollte die Visualisierung von NEAT-Python verwendet werden, wird noch
   ```sh
   pip install graphviz
   ```
-  benötigt. Das File zur Visualisierung der knN visualize.py kann in [NEAT-python](https://github.com/CodeReclaimers/neat-python/tree/master/examples/xor) gefunden werden.
+  benötigt. Das File zur Visualisierung der knN visualize.py kann in [NEAT-python](https://github.com/CodeReclaimers/neat-python/tree/master/examples/xor) gefunden werden dieses einfach in den Ordner NEAT-Robot hinzufügen.
   
   Sollten Fragen zu den Befehlen bezüglich [NEAT](https://neat-python.readthedocs.io/en/latest/neat_overview.html) oder [PyBullet](https://usermanual.wiki/Document/pybullet20quickstart20guide.479068914/html) aufkommen, so können diese in den jeweiligen Links nachgeschlagen werden.
   
