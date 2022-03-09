@@ -6,6 +6,29 @@ Dieses Repository besteht aus 4 Jupyter Lab Notebooks
 -Testumgebung für die entwickelten knN,
 -Umgebung, in der man den Roboter mit Tasten steuern kann.
 
+## Benötigte Pakete
+* NEAT-Python
+  ```sh
+  pip install neat-python
+  ```
+* PyBullet
+  ```sh
+  pip install pybullet
+  ```
+  Die restlichen verwendeten Pakete werden häufiger in Python verwendet:
+  * numpy
+  * os
+  * sys
+  * time
+  * math
+  * random
+  
+Sollte die Visualisierung von NEAT-Python verwendet werden, wird noch 
+* raphviz
+  ```sh
+  pip install graphviz
+  ```
+  benötigt.
 ## Umgebung zur Auswahl der Zielpunkte
 Enthält zwei Möglichkeiten sich eine Liste von Zielpunkten erstellen zu lassen. Erstere bewegt den Roboter in zufällige Positionen, überprüft ob diese zulässig sind und fügt sie dann der Liste hinzu. Diese Methode wird für Versuche mit mehr als 3 Achsen empfohlen.
 Die Zweite Variante, approximiert den Bereich der möglichen Zielpunkte als Hohlkugel um den Punkt 0,0,0.36 und nutzt diese, um Zielpunkte zu bestimmen.  Diese Zielpunkte lassen sich auch auf nur bestimmte Bereiche eingrenzen. Wird für Versuche mit 3 oder weniger Achsen empfohlen.
