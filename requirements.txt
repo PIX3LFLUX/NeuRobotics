@@ -1,2 +1,4 @@
+graphviz==2.38
+neat-python==0.92
 numpy==1.19.2
 pybullet==3.1.7
