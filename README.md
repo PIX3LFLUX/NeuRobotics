@@ -11,10 +11,12 @@ Dieses Repository besteht aus 4 Jupyter Lab Notebooks
   ```sh
   pip install neat-python
   ```
+  Weiter Informationen dazu befinden sich im [NEAT-Python Repository](https://github.com/CodeReclaimers/neat-python)
 * PyBullet
   ```sh
   pip install pybullet
   ```
+  Weitere Informationen dazu finden sich in dem dazugehörigen [PyBullet Repository](https://github.com/bulletphysics/bullet3).
   Die restlichen verwendeten Pakete werden häufiger in Python verwendet:
   * numpy
   ```sh
@@ -33,13 +35,15 @@ Sollte die Visualisierung von NEAT-Python verwendet werden, wird noch
   ```
   benötigt. Das File zur Visualisierung der knN visualize.py kann in [NEAT-python](https://github.com/CodeReclaimers/neat-python/tree/master/examples/xor) gefunden werden.
   
+  Sollten Fragen zu den Befehlen bezüglich [NEAT](https://neat-python.readthedocs.io/en/latest/neat_overview.html) oder [PyBullet](https://usermanual.wiki/Document/pybullet20quickstart20guide.479068914/html) aufkommen, so können diese in den jeweiligen Links nachgeschlagen werden.
+  
   
 ## Setup
-  1. Repositiory klonen
-  2. Mit CreatePositions.ipynb Zielpositionen für die gewünschte Anzahl an Achsen bestimmen.
+  1. Repositiory klonen.
+  2. Mit CreatePositions.ipynb Zielpositionen für die gewünschte Anzahl an Achsen bestimmen. Diese werden unter einem vorher einstellbaren Namen abgespeichert.
   3. Einstellungen in der zweiten Zelle von NEAT-Robot.ipynb für den gewünschten Ansatz anpassen. Sollte der Pixelflux Server verwendet werden GUI UNBEDINGT auf FALSE setzen. Sonst bricht dieser sofort nach Start ab.
   4. In der dritten Zelle von NEAT-Robot.ipynb die gewünschten Inputs, welche das knN erhalten soll, in dem markierten Bereich anpassen. Dafür sind bereits in den Kommentaren Vorschläge enthalten. Wichtig dabei ist: nur einzelne Variablen als Inputs geben, keine Arrays/Listen.
-  5. Conifg Datei Anpassen. Hierbei sollte vor allem die Anzahl der Inputs und Outputs an die in 3. und 4. vorgenommenen Einstellungen angepasst werden. Fitness anpassen, je nachdem ob die Orientierung des Endeffektors mit beachtet werden soll (Hier hat die Fitnessfunktion einen Wertebereich von [0,200]) oder nicht (Wertebereich von [0,100]). Für die restliche Einstellungen können verschiedene Werte überprüft werden. Die hier verwendeten entsprechen den Werten, welche in der Conifg Datei von [NEAT-python](https://github.com/CodeReclaimers/neat-python/tree/master) vorgeschlagen werden. Je nach verwendetem Prozessor bietet es sich an die Anzahl der knN pro Generation (pop_size) höher oder niedriger zu setzen. Ein höherer Wert bedeutet, es werden mehrere Roboter gleichzeitg simuliert. Dies benötigt eine größere Rechenleistung. Nach jeder Änderung das speichern, sonst werden diese nicht übernommen.
+  5. Conifg Datei Anpassen. Hierbei sollte vor allem die Anzahl der Inputs und Outputs an die in 3. und 4. vorgenommenen Einstellungen angepasst werden. Fitness anpassen, je nachdem ob die Orientierung des Endeffektors mit beachtet werden soll (Hier hat die Fitnessfunktion einen Wertebereich von [0,200]) oder nicht (Wertebereich von [0,100]). Für die restliche Einstellungen können verschiedene Werte überprüft werden. Die hier verwendeten entsprechen den Werten, welche in der Conifg Datei von [NEAT-python](https://neat-python.readthedocs.io/en/latest/xor_example.html) vorgeschlagen werden. Je nach verwendetem Prozessor bietet es sich an die Anzahl der knN pro Generation (pop_size) höher oder niedriger zu setzen. Ein höherer Wert bedeutet, es werden mehrere Roboter gleichzeitg simuliert. Dies benötigt eine größere Rechenleistung. Nach jeder Änderung das speichern, sonst werden diese nicht übernommen.
   6. In NEAT-Roboter.ipynb die einzelnen Zellen nacheinander ausführen. Die vierte Zelle startet den NEAT-Algorithmus. Es speichert das beste knN als winner-ctrnn ab. Dieses sollte nach jedem Versuch umbennant werden, um ein überschreiben zu verhindern.
 
 ## Setup Testumgebung
