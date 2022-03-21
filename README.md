@@ -1,4 +1,5 @@
 # Erstellen eines neuronalen Netzes zur Steuerung eines Roboterarmes durch neuronevolutionäre Algorithmen
+![plot](./NEAT-ROBOT/pictures/robots.jpg)
 
 Dieses Repository besteht aus 4 Jupyter Lab Notebooks
 -NEAT Algorithmus zum entwickeln der knN,
