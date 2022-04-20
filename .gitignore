@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+NEAT-ROBOT/.DS_Store
+.DS_Store
